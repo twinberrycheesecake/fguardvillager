@@ -38,7 +38,7 @@ public class GuardModel extends HumanoidModel<Guard> {
                 .texOffs(1, 95).addBox(-6.0F, 4.0F, -5.0F, 12.0F, 10.0F, 11.0F, new CubeDeformation(0.0F))
                 .texOffs(26, 4).addBox(-1.0F, 11.0F, 6.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 72).addBox(-2.5F, -10.0F, -3.0F, 7.0F, 7.0F, 7.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 116).addBox(-1.5F, -26.0F, -6.0F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 116).addBox(-1.5F, -3.0F, -6.0F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
                 .texOffs(26, 72).mirror().addBox(3.5F, -11.0F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
                 .texOffs(26, 72).addBox(-3.5F, -11.0F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 0.0F, 0.0F));
         PartDefinition rightArm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(50, 94).addBox(-13.0F, 0.5F, -2.0F, 3.0F, 11.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(5.0F, 0.0F, 0.0F));
