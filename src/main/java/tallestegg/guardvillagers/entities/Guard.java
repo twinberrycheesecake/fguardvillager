@@ -234,7 +234,7 @@ public class Guard extends PathfinderMob implements CrossbowAttackMob, RangedAtt
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.VILLAGER_AMBIENT;
+        return SoundEvents.POLAR_BEAR_AMBIENT;
     }
 
     @Override
@@ -242,13 +242,13 @@ public class Guard extends PathfinderMob implements CrossbowAttackMob, RangedAtt
         if (this.isBlocking()) {
             return SoundEvents.SHIELD_BLOCK;
         } else {
-            return SoundEvents.VILLAGER_HURT;
+            return SoundEvents.POLAR_BEAR_HURT;
         }
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.VILLAGER_DEATH;
+        return SoundEvents.POLAR_BEAR_DEATH;
     }
 
     @Override
@@ -469,7 +469,7 @@ public class Guard extends PathfinderMob implements CrossbowAttackMob, RangedAtt
             this.heal(stack.getItem().getFoodProperties().getNutrition());
         }
         super.eat(world, stack);
-        world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.PLAYER_BURP, SoundSource.PLAYERS, 0.5F,
+        world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.POLAR_BEAR_AMBIENT_BABY, SoundSource.PLAYERS, 0.5F,
                 world.random.nextFloat() * 0.1F + 0.9F);
         this.setEating(false);
         return stack;
