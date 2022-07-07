@@ -19,7 +19,7 @@ public class GuardArmorModel extends HumanoidModel<Guard> {
         MeshDefinition meshdefinition = HumanoidModel.createMesh(new CubeDeformation(1.0F), 0.0F);
         PartDefinition partdefinition = meshdefinition.getRoot();
         partdefinition.addOrReplaceChild("head",
-                CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -10.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)),
+                CubeListBuilder.create().texOffs(0, 0).addBox(-3.5F, -10.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)),
                 PartPose.offset(0.0F, 1.0F, 0.0F));
         return LayerDefinition.create(meshdefinition, 64, 32);
     }
