@@ -28,8 +28,8 @@ public class GuardArmorModel extends HumanoidModel<Guard> {
                 .texOffs(16, 16).addBox(-4.0F, 5.8F, -0.05F, 8.0F, 6.0F, 4.0F, new CubeDeformation(2.1F)), PartPose.offset(0.0F, 0.0F, 0.0F));
         partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 16).mirror().addBox(-0.4F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.5F)).mirror(false), PartPose.offset(1.9F, 12.0F, 0.0F));
         partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 16).mirror().addBox(-3.6F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.5F)).mirror(false), PartPose.offset(-1.9F, 12.0F, 0.0F));
-        partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(40, 16).addBox(-3.0F, -2.5F, 0.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
-        partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(40, 16).mirror().addBox(-1.0F, -2.5F, 0.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+        partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(40, 16).addBox(-3.5F, -2.5F, 0.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.25F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(40, 16).mirror().addBox(-0.5F, -2.5F, 0.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.25F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
         return LayerDefinition.create(meshdefinition, 64, 32);
     }
     public static LayerDefinition createInnerArmorLayer() {
